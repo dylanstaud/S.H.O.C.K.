@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import webapp2
 import os
 
@@ -23,3 +24,6 @@ app = webapp2.WSGIApplication([
     ('/', FortuneHandler),
  #maps '/predict' to the FortuneHandler
 ], debug=True)
+=======
+print("Hello World")
+>>>>>>> 1f55868dd0298b9f0b5506f6cf7ee2ca195abb99
