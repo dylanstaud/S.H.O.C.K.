@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+import jinja2
 import webapp2
 import os
 
@@ -15,7 +15,7 @@ class FortuneHandler(webapp2.RequestHandler):
         results_template =jinja_current_directory.get_template("index.html")
         # In part 2, instead of returning this string,
         # make a function call that returns a random fortune.
-        self.response.write(results_template.render(random_fortune))
+        self.response.write("hi")
 
 
 app = webapp2.WSGIApplication([
@@ -24,6 +24,3 @@ app = webapp2.WSGIApplication([
     ('/', FortuneHandler),
  #maps '/predict' to the FortuneHandler
 ], debug=True)
-=======
-print("Hello World")
->>>>>>> 1f55868dd0298b9f0b5506f6cf7ee2ca195abb99
