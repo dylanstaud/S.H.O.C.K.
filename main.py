@@ -12,7 +12,7 @@ jinja_current_directory =  jinja2.Environment(
 class Greeting(webapp2.RequestHandler):
     def get(self):
         greet = "hi"
-        index_template =jinja_current_directory.get_template("index.html")
+        index_template =jinja_current_directory.get_template("templates/index.html")
         self.response.write(index_template.render())
 
 app = webapp2.WSGIApplication([
